@@ -13,4 +13,5 @@ workflows:
   version: 2
   danger:
     jobs:
-      - danger
+      - danger:
+          context: danger

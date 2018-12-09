@@ -1,0 +1,5 @@
+{
+  "name": "circleci-danger-sample",
+  "private": true,
+  "dependencies": {}
+}

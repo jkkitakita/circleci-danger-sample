@@ -1,0 +1,16 @@
+version: 2
+
+jobs:
+  danger:
+    docker:
+      - image: jkkitakita/circleci-danger
+    steps:
+      - checkout
+      - run: cp -f ~/danger/Dangerfile .
+      - run: bundle exec danger --fail-on-errors=true
+
+workflows:
+  version: 2
+  danger:
+    jobs:
+      - danger
